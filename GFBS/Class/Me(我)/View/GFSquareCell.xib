@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GFSquareCell">
+            <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="188" height="188"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Favourite Restaurant" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODi-72-ee5">
+                        <rect key="frame" x="5" y="115" width="178" height="47"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="47" id="iYC-ry-fep"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gMB-OS-Yth">
+                        <rect key="frame" x="64" y="25" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="VcT-iZ-WwO"/>
+                            <constraint firstAttribute="width" constant="60" id="gPC-sg-ZIL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ODi-72-ee5" secondAttribute="trailing" constant="5" id="F0A-Wa-MjZ"/>
+                <constraint firstItem="ODi-72-ee5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="IgG-Wr-u9v"/>
+                <constraint firstItem="ODi-72-ee5" firstAttribute="top" secondItem="gMB-OS-Yth" secondAttribute="bottom" constant="30" id="Szw-eX-PdE"/>
+                <constraint firstItem="gMB-OS-Yth" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="25" id="Vgw-as-oOP"/>
+                <constraint firstItem="gMB-OS-Yth" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="dlP-1Z-ePj"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="gMB-OS-Yth" id="n6f-MR-Z5h"/>
+                <outlet property="titleLabel" destination="ODi-72-ee5" id="ex8-Pc-zfe"/>
+            </connections>
+            <point key="canvasLocation" x="-72.5" y="10.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
